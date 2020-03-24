@@ -1,10 +1,9 @@
 
+let obj = { val: 10 };
 
-//Constructor function
-function Circle(radius) {
-  this.radius = radius;
-  this.draw = function() {
-    console.log('draw');
-  }
+function increase(obj) {
+  obj.val++;
 }
-const another = new Circle(1);
+
+increase(obj);
+console.log(obj);
